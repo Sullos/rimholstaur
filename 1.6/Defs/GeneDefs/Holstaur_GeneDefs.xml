@@ -228,4 +228,25 @@
       <Baby>Things/Pawn/Humanlike/Bodies/CowGirlFluff/Fluff_Child</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>
+
+  <!-- Lactation -->
+  <GeneDef>
+    <defName>S_Lac_Cow</defName>
+    <label>holstaur lactation</label>
+    <description>Carriers of this gene will produce more milk and lactate permanently.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/Gene_LacCow</iconPath>
+    <statOffsets>
+      <MilkProductionYield>10</MilkProductionYield>
+      <MilkProductionSpeed>10</MilkProductionSpeed>
+    </statOffsets>
+    <forcedTraits>
+      <li>
+        <def MayRequire="rjw.milkingmachine">LM_NaturalHucow</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
 </Defs>
