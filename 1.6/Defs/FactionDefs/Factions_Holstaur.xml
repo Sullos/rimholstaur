@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <FactionDef ParentName="S_HolstaurTribeBase">
+        <defName>S_HolstaurTribe</defName>
+        <label>holstaur tribe</label>
+        <description>A tribe of holstaurs, kind and gentle. These submissive cow-human hybrids live a peaceful life, often in wide-open fields.</description>
+        <canSiege>false</canSiege>
+        <naturalEnemy>false</naturalEnemy>
+        <pawnSingular>holstaur</pawnSingular>
+        <pawnsPlural>holstaurs</pawnsPlural>
+        <leaderTitle>queen</leaderTitle>
+        <allowedArrivalTemperatureRange>-20~60</allowedArrivalTemperatureRange>
+        <factionNameMaker>NamerFactionTribal</factionNameMaker>
+        <factionIconPath>World/WorldObjects/Expanding/HolstaurTribe</factionIconPath>
+        <colorSpectrum Inherit="False">
+            <li>(1.0, 0.06, 0.06)</li>
+            <li>(1.0, 0.06, 0.06)</li>
+        </colorSpectrum>
+        <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+        <settlementTexturePath>World/WorldObjects/Expanding/HolstaurTribe</settlementTexturePath>
+        <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+        <techLevel>Animal</techLevel>
+        <raidCommonalityFromPointsCurve>
+            <points><li>(0, 1)</li></points>
+        </raidCommonalityFromPointsCurve>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+        </requiredMemes>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">BodyMod_Approved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator_Preferred</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge_Preferred</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">AgeReversal_Demanded</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+        </disallowedPrecepts>
+        <caravanTraderKinds>
+            <li>Caravan_Neolithic_BulkGoods</li>
+            <li>Caravan_Neolithic_WarMerchant</li>
+            <li>Caravan_Neolithic_ShamanMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Neolithic_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Neolithic_Standard</li>
+        </baseTraderKinds>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Tribal</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <xenotypeSet>
+            <xenotypeChances>
+                <S_Holstaur>1</S_Holstaur>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(750, 50)</li>
+                <li>(20000, 1250)</li>
+                <li>(60000, 5000)</li>
+                <li>(100000, 10000)</li>
+                <li>(150000, 20000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(35,     15)</li>
+                <li>(100,   120)</li>
+                <li>(1000,  500)</li>
+                <li>(2000,  800)</li>
+                <li>(4000, 1000)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+
+        <pawnGroupMakers>
+          <li>
+            <kindDef>Combat</kindDef>
+            <options>
+              <S_Farmer>10</S_Farmer>
+              <S_Fighter>20</S_Fighter>
+              <S_Rancher>15</S_Rancher>
+              <S_Queen>5</S_Queen>
+            </options>
+          </li>
+
+          <li>
+            <kindDef>Peaceful</kindDef>
+            <options>
+              <S_Farmer>20</S_Farmer>
+              <S_Rancher>10</S_Rancher>
+              <S_Fighter>5</S_Fighter>
+              <S_Trader>10</S_Trader>
+            </options>
+          </li>
+
+          <li>
+            <kindDef>Trader</kindDef>
+            <traders>
+              <S_Trader>1</S_Trader>
+            </traders>
+            <carriers>
+              <Muffalo>10</Muffalo>
+            </carriers>
+            <guards>
+              <S_Farmer>8</S_Farmer>
+              <S_Rancher>5</S_Rancher>
+              <S_Fighter>8</S_Fighter>
+            </guards>
+          </li>
+
+          <li>
+            <kindDef>Settlement</kindDef>
+            <options>
+              <S_Farmer>20</S_Farmer>
+              <S_Rancher>10</S_Rancher>
+              <S_Queen>10</S_Queen>
+              <S_Fighter>20</S_Fighter>
+              <S_Trader>1</S_Trader>
+            </options>
+          </li>
+        </pawnGroupMakers>
+    </FactionDef>
+</Defs>

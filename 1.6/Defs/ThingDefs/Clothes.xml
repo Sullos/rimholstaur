@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- Things saved for future upates
+	
+	
+	
+	hat/helms
+	<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+    <hatRenderedAboveBody>true</hatRenderedAboveBody>
+    <hatRenderedBehindHead>false</hatRenderedBehindHead>
+	
+	ideology meme required for certain outfits
+	<memePrerequisitesAny><li>Guilty</li><li>PainIsVirtue</li></memePrerequisitesAny>
+	
+	percept roles need edited to make a role wear a certain outfit found in percepts_role def.
+	this currently seems to need something in source/c# edited to make the tooltip during ideology creation. 
+	doesn't break gameplay from testing but it does flood error logger.
+	
+	
+	These go in the <apparel> section, and control npc outfit spawning, factions spawn with it based on tag, may create a tag called lewd so someone can make lewd factions.
+	<tags> 
+        <li>IndustrialAdvanced</li>
+    </tags>  
+
+	<li MayRequire="Ludeon.RimWorld.Royalty">
+	</li>
+	
+	<li MayRequire="Ludeon.RimWorld.Ideology">
+	</li>
+	
+	-->>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- apparel parent (things that every outfit will share by default) -->
+	
+	<ThingDef Name="SApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+	
+	
+	<!--Cow Bikini Top  -->
+	
+	<ThingDef ParentName="SApparelMakeableBase">
+		<defName>Cowkini</defName>
+		<label>Cow Bikini Top</label>
+		<description>A simple yet revealing bikini. It's made with furs for extra warmth.</description>
+		<recipeMaker>
+			<researchPrerequisite>CowClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Cowkini/Cowkini</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+			<li>Underwear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.2</Mass>
+			<Beauty>0.5</Beauty>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>SizedApparel_ShowBelly</li>
+				<li>SizedApparel_ShowPrivateCrotch</li>
+				<li>Cow</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Cowkini/Cowkini</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  <!-- Cow Bikini Bottom -->
+	<ThingDef ParentName="SApparelMakeableBase">
+		<defName>Cowbottom</defName>
+		<label>Cow Bikini Bottom</label>
+		<description>A simple yet revealing bikini thong made with fur. Helps keep you warm.</description>
+		<recipeMaker>
+			<researchPrerequisite>CowClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Cowbottom/Cowbottom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+			<li>Underwear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>SizedApparel_ShowBelly</li>
+				<li>SizedApparel_IgnorBreastSize</li>
+				<li>Cow</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Cowbottom/Cowbottom</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  <!-- Cow Overalls -->
+	<ThingDef ParentName="SApparelMakeableBase">
+		<defName>Overalls</defName>
+		<label>Cow Overalls</label>
+		<description>A simple yet sturdy set of overalls offering year round protection from the elements in the fields.</description>
+		<recipeMaker>
+			<researchPrerequisite>CowClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Overalls/Overalls</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.0</Mass>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.90</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.70</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>SizedApparel_ShowBelly</li>
+				<li>SizedApparel_IgnorBreastSize</li>
+				<li>Cow</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Overalls/Overalls</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+</Defs>

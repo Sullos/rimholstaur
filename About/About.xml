@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Rim Holstaur</name>
+
+    <author>Sullos</author>
+
+    <packageId>Sullos.RimHolstaur</packageId>
+
+    <url>URL</url>
+
+    <modVersion>1.0</modVersion>
+
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+
+    <modDependencies>
+        <li>
+            <packageId>Ludeon.RimWorld.Biotech</packageId>
+            <displayName>Biotech</displayName>
+            <steamWorkshopUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech</steamWorkshopUrl>
+        </li>
+
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
+
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>Ludeon.RimWorld.Anomaly</li>
+        <li>Ludeon.RimWorld.Odyssey</li>
+        <li>brrainz.harmony</li>
+        <li>rim.job.world</li>
+        <li>shauaputa.rimnudeworld</li>
+        <li>3HSTltd.wolf.gene</li>
+        <li>NachoToast.XenotypePatchUtils</li>
+        <li>vegapnk.rjw.genes</li>
+    </loadAfter>
+
+    <description>Adds a new xenotype and faction focused on Holstaurs.</description>
+</ModMetaData>
