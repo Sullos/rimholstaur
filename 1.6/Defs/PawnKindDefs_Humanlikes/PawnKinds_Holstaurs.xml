@@ -47,7 +47,6 @@
     <apparelTags>
         <li>Cow</li>
         <li>Neolithic</li>
-        <li>MedievalMilitary</li>
     </apparelTags>
     <apparelMoney>
         <min>100</min>
@@ -120,7 +119,6 @@
     </apparelMoney>
     <apparelTags>
       <li>Cow</li>
-      <li>IndustrialAdvanced</li>
       <li>MedievalMilitary</li>
     </apparelTags>
     <apparelRequired>

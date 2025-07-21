@@ -70,7 +70,7 @@
             <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_HerdMentality</li>
             <!-- Body Fluff and Milk (0 MET) -->
             <li>S_Fluff_Cow</li>
-            <li>S_Lac_Cow</li>
+            <!--li>S_Lac_Cow</li-->
         </genes>
         <inheritable>True</inheritable>
     </XenotypeDef>
