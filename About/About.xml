@@ -6,7 +6,7 @@
 
     <packageId>Sullos.RimHolstaur</packageId>
 
-    <url>URL</url>
+    <url>https://github.com/Sullos/rimholstaur</url>
 
     <modVersion>1.0</modVersion>
 
@@ -39,10 +39,12 @@
         <li>brrainz.harmony</li>
         <li>rim.job.world</li>
         <li>shauaputa.rimnudeworld</li>
-        <li>3HSTltd.wolf.gene</li>
         <li>NachoToast.XenotypePatchUtils</li>
         <li>vegapnk.rjw.genes</li>
+        <li>OTYOTY.SizedApparel</li>
     </loadAfter>
 
-    <description>Adds a new xenotype and faction focused on Holstaurs.</description>
+    <description>Rim-Holstaur adds a new xenotype and faction focused on Holstaurs. Holstaurs are monster girls known for their laid back lives, delicious milk, and need to find a husband. The Holstaur tribe, is non-violent, rarely attacking humans. Should you find a holstaur, any colony would be very happy with their kind and loving nature they bring with them.
+        This mod will work best with Biotech, RJW, and Sized Apparel. Gene adding mods such as RJW Genes, Alpha Genes, and Integrated Genes will add additional functionality and a more accurate representation of how Holstaurs are intended to be.
+        Credit for the original Bikini textures goes to TeH_Dav and Argon.</description>
 </ModMetaData>
