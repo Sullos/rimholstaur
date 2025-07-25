@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeIconDef> 
+    <defName>XenotypeHolstaur</defName> 
+    <texPath>UI/Icons/Xenotypes/Holstaur</texPath>
+  </XenotypeIconDef>
+
+</Defs>

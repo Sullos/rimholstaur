@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <FactionDef ParentName="S_HolstaurTribeBase">
+        <defName>S_HolstaurTribe</defName>
+        <label>holstaur tribe</label>
+        <description>A gentle tribe of Holstaur, usually gathering together near pastures or plains, this calm and peaceful species holds tightly-knit communities referred to as Herds, protected by the higher ranking members of the community. Rank is determined by strength and dominant nature. The species is largely female, though some are born hermaphroditic, allowing for the species to continue.
+
+        The ranking system in the community is rather simple. At the bottom of the hierarchy are the Cattle and Farmrers, they are the tenders of farms and keepers of animals, and also produce the most milk out of the herd. 
+
+        Next are the Brave, warriors and combatants, they are lacking in strength, but their number is meant to serve to protect the herd until their stronger allies show up.
+
+        The third highest are the Ranchers, specializing in social matters, they often carry firearms or weapons, but mostly to serve as protection from wild animals or ensuring the rest of the herd feels safe more than for actual use against people. They lead caravans and traders to provide their milk and food items at reasonable prices in an attempt to ensure alliance with others.
+
+        The highest rank is the Queen, always Hermaphroditic, the Queen is declared the leader of the entire herd, and her purpose is to forge alliances with other tribes and colonies, as well as to seek out a marital alliance at any cost, for it is only when the Herd is protected by the strong that they will survive
+</description>
+        <canSiege>false</canSiege>
+        <naturalEnemy>false</naturalEnemy>
+        <pawnSingular>holstaur</pawnSingular>
+        <pawnsPlural>holstaurs</pawnsPlural>
+        <leaderTitle>queen</leaderTitle>
+        <allowedArrivalTemperatureRange>-20~50</allowedArrivalTemperatureRange>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <factionIconPath>World/WorldObjects/Expanding/HolstaurTribe</factionIconPath>
+        <colorSpectrum Inherit="False">
+            <li>(1.0, 0.06, 0.06)</li>
+            <li>(1.0, 0.06, 0.06)</li>
+        </colorSpectrum>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <settlementTexturePath>World/WorldObjects/Expanding/HolstaurTribe</settlementTexturePath>
+        <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+        <techLevel>Medieval</techLevel>
+        <raidCommonalityFromPointsCurve>
+            <points><li>(0, 1)</li></points>
+        </raidCommonalityFromPointsCurve>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+        </requiredMemes>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">BodyMod_Approved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator_Preferred</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge_Preferred</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">AgeReversal_Demanded</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+        </disallowedPrecepts>
+        <caravanTraderKinds>
+            <li>Caravan_Neolithic_BulkGoods</li>
+            <li>Caravan_Neolithic_WarMerchant</li>
+            <li>Caravan_Neolithic_ShamanMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Neolithic_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Neolithic_Standard</li>
+        </baseTraderKinds>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Tribal</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <xenotypeSet>
+            <xenotypeChances>
+                <S_Holstaur>1</S_Holstaur>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(750, 50)</li>
+                <li>(20000, 1250)</li>
+                <li>(60000, 5000)</li>
+                <li>(100000, 10000)</li>
+                <li>(150000, 20000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(35,     15)</li>
+                <li>(100,   120)</li>
+                <li>(1000,  500)</li>
+                <li>(2000,  800)</li>
+                <li>(4000, 1000)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+
+        <pawnGroupMakers>
+          <li>
+            <kindDef>Combat</kindDef>
+            <options>
+              <S_Farmer>10</S_Farmer>
+              <S_Brave>20</S_Brave>
+              <S_Rancher>15</S_Rancher>
+              <S_Queen>5</S_Queen>
+            </options>
+          </li>
+
+          <li>
+            <kindDef>Peaceful</kindDef>
+            <options>
+              <S_Cattle>20</S_Cattle>
+              <S_Farmer>20</S_Farmer>
+              <S_Rancher>10</S_Rancher>
+              <S_Brave>5</S_Brave>
+              <S_Trader>10</S_Trader>
+            </options>
+          </li>
+
+          <li>
+            <kindDef>Trader</kindDef>
+            <traders>
+              <S_Trader>1</S_Trader>
+            </traders>
+            <carriers>
+              <Muffalo>10</Muffalo>
+            </carriers>
+            <guards>
+              <S_Cattle>5</S_Cattle>  
+              <S_Farmer>5</S_Farmer>
+              <S_Rancher>3</S_Rancher>
+              <S_Brave>8</S_Brave>
+            </guards>
+          </li>
+
+          <li>
+            <kindDef>Settlement</kindDef>
+            <options>
+              <S_Cattle>10</S_Cattle>
+              <S_Farmer>10</S_Farmer>
+              <S_Rancher>5</S_Rancher>
+              <S_Queen>1</S_Queen>
+              <S_Brave>10</S_Brave>
+              <S_Trader>1</S_Trader>
+            </options>
+          </li>
+        </pawnGroupMakers>
+    </FactionDef>
+</Defs>

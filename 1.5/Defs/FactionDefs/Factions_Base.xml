@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <FactionDef ParentName="FactionBase" Name="S_TribeBase" Abstract="True">
+        <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    </FactionDef>
+
+    <FactionDef ParentName="S_TribeBase" Name="S_HolstaurTribeBase" Abstract="True">
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+        </requiredMemes>
+    </FactionDef>
+</Defs>

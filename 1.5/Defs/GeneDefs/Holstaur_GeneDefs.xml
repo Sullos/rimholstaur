@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Ears -->
+    <GeneDef ParentName="GeneEarsBase">
+    <defName>Ears_Cow</defName>
+    <label>cow ears</label>
+    <description>Carriers of this gene will grow soft cow-like ears.</description>
+    <iconPath>UI/Icons/Genes/Gene_EarCow</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CowEars/CowEarsInner</texPath>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+        </drawData>
+      </li>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CowEars/CowEarsOuter</texPath>
+        <colorType>Hair</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>cow</symbol></li>
+        <li><symbol>beef</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>cow</symbol></li>
+        <li><symbol>beef</symbol></li>
+        <li><symbol>ear</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Horns -->
+  <GeneDef ParentName="GeneHeadboneBase">
+    <defName>Horns_Cow</defName>
+    <label>cow horns</label>
+    <description>Carriers of this gene grow two, small, cow horns protruding from the head.</description>
+    <iconPath>UI/Icons/Genes/Gene_CowHorns</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Horns/Horns1</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Horns/Horns2</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Horns/Horns3</li>
+        </texPaths>
+        <color>(237, 202, 156)</color>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>5</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>cattle</symbol></li>
+        <li><symbol>cow</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>horn</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+
+  <!-- Tail -->
+  <GeneDef ParentName="GeneTailBase">
+    <defName>Tail_Cow</defName>
+    <label>cow tail</label>
+    <description>Carriers of this gene grow a medium, cow tail with a fluffy tip.</description>
+    <iconPath>UI/Icons/Genes/Gene_CowTail</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/Tails/CowTail</texPath>
+        <colorType>Skin</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-3</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.1, 0, -0.2)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.1, 0, -0.25)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, 0, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, 0, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/Tails/CowTailTuft</texPath>
+        <colorType>Hair</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.1, -0, -0.2)</offset>
+            <layer>180</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.1, 0, -0.25)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, 0, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, 0, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <!-- Skintones -->
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_Light</defName>
+    <label>light skin</label>
+    <labelShortAdj>noir</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin an light tan color.</description>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(237, 212, 179)</skinColorOverride>
+    <displayOrderInCategory>99</displayOrderInCategory>
+  </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_Chocolate</defName>
+    <label>brown skin</label>
+    <labelShortAdj>noir</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a brown color.</description>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(130, 91, 48)</skinColorOverride>
+    <displayOrderInCategory>99</displayOrderInCategory>
+  </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_Black</defName>
+    <label>black skin</label>
+    <labelShortAdj>noir</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin charcoal black.</description>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(99, 70, 36)</skinColorOverride>
+    <displayOrderInCategory>99</displayOrderInCategory>
+  </GeneDef>
+
+  <!-- Fluff -->
+  <GeneDef>
+    <defName>S_Fluff_Cow</defName>
+    <label>body fluff</label>
+    <labelShortAdj>furskinned</labelShortAdj>
+    <description>Carriers of this gene grow thick cow fur on the hips and legs of their body, which protects them from cold temperatures.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/Gene_LegFluffCow</iconPath>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+    </statOffsets>
+    <fur>S_Fluff_Cow</fur>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <FurDef>
+    <defName>S_Fluff_Cow</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Female>Things/Pawn/Humanlike/Bodies/CowGirlFluff/Fluff_Female</Female>
+      <Thin>Things/Pawn/Humanlike/Bodies/CowGirlFluff/Fluff_Child</Thin>
+      <Child>Things/Pawn/Humanlike/Bodies/CowGirlFluff/Fluff_Child</Child>
+      <Baby>Things/Pawn/Humanlike/Bodies/CowGirlFluff/Fluff_Child</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <!-- Lactation -->
+  <!--GeneDef>
+    <defName>S_Lac_Cow</defName>
+    <label>holstaur lactation</label>
+    <description>Carriers of this gene will produce more milk and lactate permanently.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/Gene_LacCow</iconPath>
+    <statOffsets MayRequire="rjw.milk.humanoid">
+      <MilkProductionYield>10</MilkProductionYield>
+      <MilkProductionSpeed>10</MilkProductionSpeed>
+    </statOffsets>
+    <forcedTraits>
+      <li>
+        <def MayRequire="bipassed.milkingmachine">LM_NaturalHucow</def>
+      </li>
+    </forcedTraits>
+  </GeneDef-->
+
+  <!-- Herd Minded -->
+  <GeneDef>
+    <defName>S_Herd_Minded</defName>
+    <label>herd mind</label>
+    <labelShortAdj>herd minded</labelShortAdj>
+    <description>Carriers of this gene tend to follow the beliefs of those around them. Popular idelogies will be more appealing to follow.</description>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/Gene_HerdMinded</iconPath>
+    <exclusionTags>
+      <li>Turn_Exclusion_Certainty</li>
+    </exclusionTags>
+    <statFactors>
+      <CertaintyLossFactor>5.0</CertaintyLossFactor>
+    </statFactors>
+  </GeneDef>
+
+  <!-- Submissive -->
+  <GeneDef ParentName="GeneAggressionBase">
+    <defName>S_Submissive</defName>
+    <label>submissive</label>
+    <description>Carriers of this gene benefit from being enslaved anbd have a slower slave supression fall rate.</description>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/Gene_Submissive</iconPath>
+    <exclusionTags>
+      <li>Turn_Exclusion_FreeSpirit</li>
+    </exclusionTags>
+    <statOffsets>
+      <SlaveSuppressionFallRate>0.5</SlaveSuppressionFallRate>
+    </statOffsets>
+  </GeneDef>
+
+  <!-- Digitigrade -->
+  <GeneDef>
+    <defName>S_Digitigrade</defName>
+    <label>digitigrade legs</label>
+    <labelShortAdj>digitigrade</labelShortAdj>
+    <description>Carriers of this gene have digitigrade legs. They walk on their tarsals with their metatarsals lifted in the air. This gives them a weaker stance yet greater movement speeds.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/Gene_Digitigrade</iconPath>
+    <exclusionTags>
+      <li>CarryingCapacity</li>
+    </exclusionTags>
+    <statFactors>
+      <MoveSpeed>1.3</MoveSpeed>
+      <CarryingCapacity>0.7</CarryingCapacity>
+    </statFactors>
+  </GeneDef>
+
+</Defs>
