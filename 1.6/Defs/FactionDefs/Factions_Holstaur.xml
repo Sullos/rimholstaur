@@ -3,7 +3,16 @@
     <FactionDef ParentName="S_HolstaurTribeBase">
         <defName>S_HolstaurTribe</defName>
         <label>holstaur tribe</label>
-        <description>A tribe of holstaurs, kind and gentle. These submissive cow-human hybrids live a peaceful life, often in wide-open fields.</description>
+        <description>A gentle tribe of Holstaur, usually gathering together near pastures or plains, this calm and peaceful species holds tightly-knit communities referred to as Herds, protected by the higher ranking members of the community. Rank is determined by strength and dominant nature. The species is largely female, though some are born hermaphroditic, allowing for the species to continue.
+
+        The ranking system in the community is rather simple. At the bottom of the hierarchy are the Cattle and Farmrers, they are the tenders of farms and keepers of animals, and also produce the most milk out of the herd. 
+
+        Next are the Brave, warriors and combatants, they are lacking in strength, but their number is meant to serve to protect the herd until their stronger allies show up.
+
+        The third highest are the Ranchers, specializing in social matters, they often carry firearms or weapons, but mostly to serve as protection from wild animals or ensuring the rest of the herd feels safe more than for actual use against people. They lead caravans and traders to provide their milk and food items at reasonable prices in an attempt to ensure alliance with others.
+
+        The highest rank is the Queen, always Hermaphroditic, the Queen is declared the leader of the entire herd, and her purpose is to forge alliances with other tribes and colonies, as well as to seek out a marital alliance at any cost, for it is only when the Herd is protected by the strong that they will survive
+</description>
         <canSiege>false</canSiege>
         <naturalEnemy>false</naturalEnemy>
         <pawnSingular>holstaur</pawnSingular>
@@ -90,7 +99,7 @@
             <kindDef>Combat</kindDef>
             <options>
               <S_Farmer>10</S_Farmer>
-              <S_Fighter>20</S_Fighter>
+              <S_Brave>20</S_Brave>
               <S_Rancher>15</S_Rancher>
               <S_Queen>5</S_Queen>
             </options>
@@ -99,9 +108,10 @@
           <li>
             <kindDef>Peaceful</kindDef>
             <options>
+              <S_Cattle>20</S_Cattle>
               <S_Farmer>20</S_Farmer>
               <S_Rancher>10</S_Rancher>
-              <S_Fighter>5</S_Fighter>
+              <S_Brave>5</S_Brave>
               <S_Trader>10</S_Trader>
             </options>
           </li>
@@ -115,19 +125,21 @@
               <Muffalo>10</Muffalo>
             </carriers>
             <guards>
-              <S_Farmer>8</S_Farmer>
-              <S_Rancher>5</S_Rancher>
-              <S_Fighter>8</S_Fighter>
+              <S_Cattle>5</S_Cattle>  
+              <S_Farmer>5</S_Farmer>
+              <S_Rancher>3</S_Rancher>
+              <S_Brave>8</S_Brave>
             </guards>
           </li>
 
           <li>
             <kindDef>Settlement</kindDef>
             <options>
-              <S_Farmer>20</S_Farmer>
-              <S_Rancher>10</S_Rancher>
-              <S_Queen>10</S_Queen>
-              <S_Fighter>20</S_Fighter>
+              <S_Cattle>10</S_Cattle>
+              <S_Farmer>10</S_Farmer>
+              <S_Rancher>5</S_Rancher>
+              <S_Queen>1</S_Queen>
+              <S_Brave>10</S_Brave>
               <S_Trader>1</S_Trader>
             </options>
           </li>

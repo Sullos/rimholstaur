@@ -11,16 +11,16 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="Holstaur_TribalPawnBase">
-    <defName>S_Farmer</defName>
-    <label>farmer</label>
+    <defName>S_Cattle</defName>
+    <label>cattle</label>
     <combatPower>30</combatPower>
     <gearHealthRange>
         <min>0.8</min>
         <max>2</max>
     </gearHealthRange>
     <apparelMoney>
-        <min>100</min>
-        <max>1000</max>
+        <min>50</min>
+        <max>500</max>
     </apparelMoney>
     <weaponTags>
         <li>NeolithicMeleeBasic</li>
@@ -41,8 +41,39 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="Holstaur_TribalPawnBase">
-    <defName>S_Fighter</defName>
-    <label>fighter</label>
+    <defName>S_Farmer</defName>
+    <label>farmer</label>
+    <combatPower>40</combatPower>
+    <gearHealthRange>
+        <min>0.8</min>
+        <max>2</max>
+    </gearHealthRange>
+    <apparelMoney>
+        <min>100</min>
+        <max>1000</max>
+    </apparelMoney>
+    <weaponTags>
+        <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <weaponMoney>
+        <min>300</min>
+        <max>600</max>
+    </weaponMoney>
+    <apparelRequired>
+        <li>Cowbell</li>
+        <li>Cowkini</li>
+        <li>Cowbottom</li>
+    </apparelRequired>
+    <forcedTraits>
+        <li>hard worker</li>
+    </forcedTraits>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>1~3</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Holstaur_TribalPawnBase">
+    <defName>S_Brave</defName>
+    <label>brave</label>
     <combatPower>60</combatPower>
     <gearHealthRange>
         <min>0.6</min>
@@ -65,6 +96,9 @@
         <min>200</min>
         <max>500</max>
     </weaponMoney>
+    <forcedTraits>
+        <li>Tough</li>
+    </forcedTraits>
     <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>5~15</initialResistanceRange>
