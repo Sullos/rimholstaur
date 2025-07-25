@@ -11,6 +11,7 @@
     <modVersion>1.0</modVersion>
 
     <supportedVersions>
+        <li>1.5</li>
         <li>1.6</li>
     </supportedVersions>
 
@@ -27,6 +28,13 @@
             <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
         </li>
+
+        <li>
+            <packageId>NachoToast.XenotypePatchUtils</packageId>
+            <displayName>Xenotype Patch Utils</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3474856773</steamWorkshopUrl>
+            <downloadUrl>https://github.com/NachoToast/XenotypePatchUtils</downloadUrl>
+        </li>
     </modDependencies>
 
     <loadAfter>
@@ -39,12 +47,22 @@
         <li>brrainz.harmony</li>
         <li>rim.job.world</li>
         <li>shauaputa.rimnudeworld</li>
-        <li>NachoToast.XenotypePatchUtils</li>
         <li>vegapnk.rjw.genes</li>
         <li>OTYOTY.SizedApparel</li>
+        <li>Turnovus.Biotech.IntegratedGenes</li>
     </loadAfter>
 
+    <loadBefore>
+        <li>NachoToast.XenotypePatchUtils</li>
+    </loadBefore>
+
     <description>Rim-Holstaur adds a new xenotype and faction focused on Holstaurs. Holstaurs are monster girls known for their laid back lives, delicious milk, and need to find a husband. The Holstaur tribe, is non-violent, rarely attacking humans. Should you find a holstaur, any colony would be very happy with their kind and loving nature they bring with them.
-        This mod will work best with Biotech, RJW, and Sized Apparel. Gene adding mods such as RJW Genes, Alpha Genes, and Integrated Genes will add additional functionality and a more accurate representation of how Holstaurs are intended to be.
-        Credit for the original Bikini textures goes to TeH_Dav and Argon.</description>
+
+    This mod requires Biotech, Ideology and Xenotype Patch Utils. 
+    This mod will work best with RJW, and RJW Genes. 
+    Gene adding mods such as RJW Genes, Alpha Genes, Big and Small, and Integrated Genes will add additional functionality and a more accurate representation of how Holstaurs and other monsters are intended to be - though the mod will work with or without any combination of these mods.
+    Sized Apparel is supported for most apparel. 
+
+    Credit for the original Bikini textures goes to TeH_Dav and Argon.
+    Lore descriptions credit goes to Swobal.</description>
 </ModMetaData>
