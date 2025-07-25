@@ -270,7 +270,7 @@
   </GeneDef>
 
   <!-- Submissive -->
-  <GeneDef ParentName="GeneAggressionBase">
+  <GeneDef>
     <defName>S_Submissive</defName>
     <label>submissive</label>
     <description>Carriers of this gene benefit from being enslaved anbd have a slower slave supression fall rate.</description>

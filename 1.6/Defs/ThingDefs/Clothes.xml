@@ -1,45 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
-	<!-- Things saved for future upates
-	
-	
-	
-	hat/helms
-	<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
-    <hatRenderedAboveBody>true</hatRenderedAboveBody>
-    <hatRenderedBehindHead>false</hatRenderedBehindHead>
-	
-	ideology meme required for certain outfits
-	<memePrerequisitesAny><li>Guilty</li><li>PainIsVirtue</li></memePrerequisitesAny>
-	
-	percept roles need edited to make a role wear a certain outfit found in percepts_role def.
-	this currently seems to need something in source/c# edited to make the tooltip during ideology creation. 
-	doesn't break gameplay from testing but it does flood error logger.
-	
-	
-	These go in the <apparel> section, and control npc outfit spawning, factions spawn with it based on tag, may create a tag called lewd so someone can make lewd factions.
-	<tags> 
-        <li>IndustrialAdvanced</li>
-    </tags>  
 
-	<li MayRequire="Ludeon.RimWorld.Royalty">
-	</li>
-	
-	<li MayRequire="Ludeon.RimWorld.Ideology">
-	</li>
-	
-	-->>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<!-- apparel parent (things that every outfit will share by default) -->
 	
 	<ThingDef Name="SApparelMakeableBase" ParentName="ApparelBase" Abstract="True">

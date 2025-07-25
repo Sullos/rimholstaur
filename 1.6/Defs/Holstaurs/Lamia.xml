@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--
+        MARK: Xenotype
+    -->
+
+    <XenotypeDef ParentName="S_XenotypeBase">
+        <defName>S_Lamia</defName>
+        <label>lamia</label>
+        <description>Lamia. Snake-human hybrids. Dangerous and powerful.</description>
+        <descriptionShort>Lamia.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Lamia</iconPath>
+        <combatPowerFactor>0.8</combatPowerFactor>
+        <factionlessGenerationWeight>1.0</factionlessGenerationWeight>
+        <genes>
+            <!-- Vanilla (0,+2,-2,+2,+2,+2,+3,-1,-2,0,-2,-1,-1 = +2 MET) -->
+            <li>Fertile</li>
+            <li>Sleepy</li>
+            <li>RobustDigestion</li>
+            <li>NakedSpeed</li>
+            <li>Libido_High</li>
+            <!-- Cosmetic (0 MET) -->
+            <li>Skin_Chocolate</li>
+            <li>Skin_Black</li>
+            <li>Skin_Light</li>
+            <!-- Mindset and Bodyset (-5 MET) -->
+            <!--li>S_Snake</li-->
+            <!-- Aptitude (-1,-1,+2,+1,+2 = +3 MET) -->
+            <li>AptitudeTerrible_Animals</li>
+            <li>AptitudeRemarkable_Melee</li>
+            <li>AptitudeRemarkable_Intellectual</li>
+            <li>AptitudeTerrible_Mining</li>
+            <!-- Big & Small Genes (0,-1 = -1 MET) -->
+            <li MayRequire="RedMattis.BigSmall.Core">BS_Flirty</li>
+            <li MayRequire="RedMattis.BigSmall.Core">BS_ToughSkin</li>
+            <!-- RJW Genes (0 MET) -->
+            <li MayRequire="Vegapnk.rjw.genes">rjw_genes_tight_female_genitalia</li>
+            <!-- Alpha Genes (0,+1 = +1 MET) -->
+            <li MayRequire="Sarg.AlphaGenes">AG_PlainLeather</li>
+            <li MayRequire="Sarg.AlphaGenes">AG_SlowGestation</li>
+        </genes>
+        <modExtensions>
+            <li Class="XenotypePatchUtils.PatchMePlease">
+                <desiredEfficiencyRange>-2~0</desiredEfficiencyRange>
+
+                <!--
+                    BnS = -1 (BnS)
+                    AG = +1 (AG)
+                    All = 0
+                -->
+
+                <always>
+                    <li>
+                        <!-- body size (-1 or +5 MET) -->
+                        <addFirst>
+                            <li MayRequire="Sarg.AlphaGenes">AG_LargerBodySize</li>
+                            <li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>
+                        </addFirst>
+                    </li>
+                    <li>
+                        <!-- gender (+0 MET) -->
+                        <addFirst>
+                            <li MayRequire="Vegapnk.rjw.genes">rjw_genes_female_only</li>
+                            <li MayRequire="Sarg.AlphaGenes">AG_Female</li>
+                        </addFirst>
+                    </li>
+                    <li>
+                        <!-- Digitigrade (-1 MET) -->
+                        <remove>S_Digitigrade</remove>
+                        <addFirst>
+                            <li MayRequire="Sarg.AlphaGenes">AG_Digitigrade</li>
+                        </addFirst>
+                    </li>
+                    <li>
+                        <!-- Herd Minded (-2 MET) -->
+                        <remove>S_Herd_Minded</remove>
+                        <addFirst>
+                            <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_HerdMentality</li>
+                        </addFirst>
+                    </li>
+                    <li>
+                        <!-- Submissive (-2 MET) -->
+                        <remove>S_Submissive</remove>
+                        <addFirst>
+                            <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_AgressionSubmissive</li>
+                        </addFirst>
+                    </li>
+                </always>
+                <!--
+                    BnS = +4 (BnS)
+                    AG = 0 (AG)
+                    All = -1
+                -->
+                <toFixMetabolism>
+                    <li>
+                        <!-- artistic aptitude change (-2 MET) -->
+                        <add>AptitudeRemarkable_Artistic</add>
+                    </li>
+                    <li>
+                        <!-- plants aptitude change (-2 MET) -->
+                        <remove>AptitudeStrong_Plants</remove>
+                        <add>AptitudeRemarkable_Plants</add>
+                    </li>
+                    <li>
+                        <!-- plants aptitude change (-2 MET) -->
+                        <remove>AptitudeStrong_Animals</remove>
+                        <add>AptitudeRemarkable_Animals</add>
+                    </li>
+                </toFixMetabolism>
+            </li>
+        </modExtensions>
+        <inheritable>True</inheritable>
+    </XenotypeDef>
+
+    <PawnKindDef ParentName="Colonist">
+        <defName>S_Lamia</defName>
+        <xenotypeSet>
+            <xenotypeChances>
+                <S_Lamia>1</S_Lamia>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+</Defs>
