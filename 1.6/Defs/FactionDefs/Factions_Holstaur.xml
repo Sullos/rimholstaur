@@ -4,11 +4,11 @@
         <defName>S_HolstaurTribe</defName>
         <label>holstaur tribe</label>
         <description>A gentle tribe of Holstaur, usually gathering together near pastures or plains, this calm and peaceful species holds tightly-knit communities referred to as Herds, protected by the higher ranking members of the community. 
-            Rank is determined by strength and dominant nature. The species is largely female, though some are born hermaphroditic, allowing for the species to continue. 
-            The ranking system in the community is rather simple. At the bottom of the hierarchy are the Cattle and Farmers, they are the tenders of farms and keepers of animals, and also produce the most milk out of the herd. 
-            Next are the Brave, warriors and combatants, they are lacking in strength, but their number is meant to serve to protect the herd until their stronger allies show up. 
-            The third highest are the Ranchers, specializing in social matters, they often carry firearms or weapons, but mostly to serve as protection from wild animals or ensuring the rest of the herd feels safe more than for actual use against people. They lead caravans and traders to provide their milk and food items at reasonable prices in an attempt to ensure alliance with others. 
-            The highest rank is the Queen, always Hermaphroditic, the Queen is declared the leader of the entire herd, and her purpose is to forge alliances with other tribes and colonies, as well as to seek out a marital alliance at any cost, for it is only when the Herd is protected by the strong that they will survive.</description>
+Rank is determined by strength and dominant nature. The species is largely female, though some are born hermaphroditic, allowing for the species to continue. 
+The ranking system in the community is rather simple. At the bottom of the hierarchy are the Cattle and Farmers, they are the tenders of farms and keepers of animals, and also produce the most milk out of the herd. 
+Next are the Brave, warriors and combatants, they are lacking in strength, but their number is meant to serve to protect the herd until their stronger allies show up. 
+The third highest are the Ranchers, specializing in social matters, they often carry firearms or weapons, but mostly to serve as protection from wild animals or ensuring the rest of the herd feels safe more than for actual use against people. They lead caravans and traders to provide their milk and food items at reasonable prices in an attempt to ensure alliance with others. 
+The highest rank is the Queen, always Hermaphroditic, the Queen is declared the leader of the entire herd, and her purpose is to forge alliances with other tribes and colonies, as well as to seek out a marital alliance at any cost, for it is only when the Herd is protected by the strong that they will survive.</description>
         <canSiege>false</canSiege>
         <naturalEnemy>false</naturalEnemy>
         <pawnSingular>holstaur</pawnSingular>
@@ -22,7 +22,7 @@
             <li>(1.0, 0.06, 0.06)</li>
         </colorSpectrum>
         <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-        <settlementTexturePath>World/WorldObjects/Expanding/HolstaurTribe</settlementTexturePath>
+        <settlementTexturePath>World/WorldObjects/Expanding/HolstaurSettlement</settlementTexturePath>
         <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
         <techLevel>Medieval</techLevel>
         <raidCommonalityFromPointsCurve>

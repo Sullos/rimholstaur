@@ -74,6 +74,8 @@
             <!-- Alpha Genes (0,+1 = +1 MET) -->
             <li MayRequire="Sarg.AlphaGenes">AG_PlainLeather</li>
             <li MayRequire="Sarg.AlphaGenes">AG_SlowGestation</li>
+            <!-- Equal Milking (0 MET) -->
+            <li MayRequire="akaster.equalmilking">EM_Permanent_Lactation</li>
         </genes>
         <modExtensions>
             <li Class="XenotypePatchUtils.PatchMePlease">
@@ -128,6 +130,12 @@
                     All = -1
                 -->
                 <toFixMetabolism>
+                    <li>
+                        <!-- lactation amount change (-1 MET) -->
+                        <add>
+                            <li MayRequire="akaster.equalmilking">EM_Lactation_Enhanced</li>
+                        </add>
+                    </li>
                     <li>
                         <!-- artistic aptitude change (-2 MET) -->
                         <add>AptitudeRemarkable_Artistic</add>
