@@ -2,7 +2,8 @@
 <Defs>
     <FactionDef ParentName="FactionBase" Name="S_TribeBase" Abstract="True">
         <requiredCountAtGameStart>0</requiredCountAtGameStart>
-        <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
         <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     </FactionDef>
 

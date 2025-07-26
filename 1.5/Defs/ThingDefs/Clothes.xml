@@ -28,7 +28,7 @@
 	<ThingDef ParentName="SApparelMakeableBase">
 		<defName>Cowkini</defName>
 		<label>Cow Bikini Top</label>
-		<description>A simple yet revealing bikini. It's made with furs for extra warmth.</description>
+		<description>A simple cow-spotted bikini top. It's made with furs for extra warmth whilst making you look adorable.</description>
 		<recipeMaker>
 			<researchPrerequisite>CowClothingResearch</researchPrerequisite>
 			<useIngredientsForColor>true</useIngredientsForColor>
@@ -86,7 +86,7 @@
 	<ThingDef ParentName="SApparelMakeableBase">
 		<defName>Cowbottom</defName>
 		<label>Cow Bikini Bottom</label>
-		<description>A simple yet revealing bikini thong made with fur. Helps keep you warm.</description>
+		<description>A simple cow-spotted bikini thong made with fur. Helps to keep you warm and looking adorable.</description>
 		<recipeMaker>
 			<researchPrerequisite>CowClothingResearch</researchPrerequisite>
 			<useIngredientsForColor>true</useIngredientsForColor>
