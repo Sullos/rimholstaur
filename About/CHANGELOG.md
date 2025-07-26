@@ -25,9 +25,19 @@ v1.1 - Dependency Update
 - Added 1.5 compatibility.
 
 
-v1.2 - Planned Changes
+v1.1.1 - 
+- Fixed settlement icons on zoom in on world map
+- Fixed settlement quantity on world creation
+- Added permanent lactation gene if Equal Milking installed - Accurate hucows at last!
+- Added mod icon
+- Slight adjustments to cow fluff texture to better accommodate RimNude textures
+- Adjustments to item descriptions
+- Adjusted cowkini underwear textures so breasts do not have overlap with side strap textures.
+
+
+v1.u - Planned Changes
 - Wanted changes - Specific textures of cow spots depending on presence of Sized apparel - ensure things look normal with rimnude or vanilla.
-- Add more Horn, tail, cow spot, and ear textures
+- Add more Horn, tail, cow spot, and ear textures - small, male, fat and hulk textures
 - Update overall texture
 - Add farm tools, equipment
 - Add a note of gradient hairs affect on appearance of Holstaurs.
@@ -39,7 +49,7 @@ v1.x - Future Plans
 - Add Fawn race
 - Add Snake girls (lamia)
 - Add Moth girls
-- Goblin girls
+- Add Goblin girls
 - Mermaid girl
 - Ghost girl
 - Zombie girl
