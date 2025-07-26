@@ -65,6 +65,8 @@
           <li>Things/Pawn/Humanlike/HeadAttachments/Horns/Horns1</li>
           <li>Things/Pawn/Humanlike/HeadAttachments/Horns/Horns2</li>
           <li>Things/Pawn/Humanlike/HeadAttachments/Horns/Horns3</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Horns/Horns4</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Horns/Horns5</li>
         </texPaths>
         <color>(237, 202, 156)</color>
         <parentTagDef>Head</parentTagDef>
