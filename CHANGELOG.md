@@ -25,7 +25,7 @@ v1.1 - Dependency Update
 - Added 1.5 compatibility.
 
 
-v1.1.1 - 
+v1.1.1 - Hotfix
 - Fixed settlement icons on zoom in on world map - New custom settlement icon.
 - Fixed settlement quantity on world creation, more than 1 should now spawn.
 - Added permanent lactation gene if Equal Milking installed - Accurate hucows at last!
@@ -34,6 +34,9 @@ v1.1.1 -
 - Adjustments to item descriptions.
 - Adjusted cowkini underwear textures so breasts do not have overlap with side strap textures.
 
+v1.1.2 - Hotfix
+- Fixed duplicate file throwing errors
+- Removed WIP race throwing errors
 
 v1.u - Planned Changes
 - Wanted changes - Specific textures of cow spots depending on presence of Sized apparel - ensure things look normal with rimnude or vanilla.
