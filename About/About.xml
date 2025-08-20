@@ -8,7 +8,7 @@
 
     <url>https://github.com/Sullos/rimholstaur</url>
 
-    <modVersion>1.1.2</modVersion>
+    <modVersion>1.1.3</modVersion>
 
     <supportedVersions>
         <li>1.5</li>
@@ -66,3 +66,4 @@ Sized Apparel is supported for most apparel.
 Credit for the original Bikini textures goes to TeH_Dav and Argon.
 Lore descriptions credit goes to Swobal.</description>
 </ModMetaData>
+
