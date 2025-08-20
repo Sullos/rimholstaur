@@ -38,6 +38,11 @@ v1.1.2 - Hotfix
 - Fixed duplicate file throwing errors
 - Removed WIP race throwing errors
 
+v1.1.3 - Hotfix
+- Hopefully fixed error of underwear thing category when certain mods arent installed.
+- Fixed error of metabolism balancing with enhanced lactation gene when EM not installed.
+- Added temporary textures for Cowkini to prevent errors until I have time to make the rest of the textures.
+
 v1.u - Planned Changes
 - Wanted changes - Specific textures of cow spots depending on presence of Sized apparel - ensure things look normal with rimnude or vanilla.
 - Add more Horn, tail, cow spot, and ear textures - small, male, fat and hulk textures
