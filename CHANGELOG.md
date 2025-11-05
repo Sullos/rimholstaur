@@ -43,6 +43,9 @@ v1.1.3 - Hotfix
 - Fixed error of metabolism balancing with enhanced lactation gene when EM not installed.
 - Added temporary textures for Cowkini to prevent errors until I have time to make the rest of the textures.
 
+  v1.1.4 - Hotfix
+- Temporarily disabled clothing tags to hopefully prevent spawning of apparel on other factions pawns until additional textures are made.
+
 v1.u - Planned Changes
 - Wanted changes - Specific textures of cow spots depending on presence of Sized apparel - ensure things look normal with rimnude or vanilla.
 - Add more Horn, tail, cow spot, and ear textures - small, male, fat and hulk textures
