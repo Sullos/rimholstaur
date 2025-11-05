@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- apparel parent (things that every outfit will share by default) -->
@@ -46,10 +46,10 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
+		<!--thingCategories>
 			<li>Apparel</li>
 			<li>Underwear</li>
-		</thingCategories>
+		</thingCategories-->
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
@@ -72,9 +72,9 @@
 				<li>SizedApparel_ShowPrivateCrotch</li>
 				<li>Cow</li>
 			</tags>
-			<defaultOutfitTags>
+			<!--defaultOutfitTags>
 				<li>Worker</li>
-			</defaultOutfitTags>
+			</defaultOutfitTags-->
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Cowkini/Cowkini</wornGraphicPath>
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 			<gender>Female</gender>
@@ -104,10 +104,10 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
+		<!--thingCategories>
 			<li>Apparel</li>
 			<li>Underwear</li>
-		</thingCategories>
+		</thingCategories-->
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
@@ -129,9 +129,9 @@
 				<li>SizedApparel_IgnorBreastSize</li>
 				<li>Cow</li>
 			</tags>
-			<defaultOutfitTags>
+			<!--defaultOutfitTags>
 				<li>Worker</li>
-			</defaultOutfitTags>
+			</defaultOutfitTags-->
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Cowbottom/Cowbottom</wornGraphicPath>
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 			<gender>Female</gender>
@@ -161,9 +161,9 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
+		<!--thingCategories>
 			<li>Apparel</li>
-		</thingCategories>
+		</thingCategories-->
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
@@ -186,9 +186,9 @@
 				<li>SizedApparel_IgnorBreastSize</li>
 				<li>Cow</li>
 			</tags>
-			<defaultOutfitTags>
+			<!--defaultOutfitTags>
 				<li>Worker</li>
-			</defaultOutfitTags>
+			</defaultOutfitTags-->
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Overalls/Overalls</wornGraphicPath>
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 			<gender>Female</gender>
