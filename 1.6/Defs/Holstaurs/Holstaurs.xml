@@ -132,9 +132,14 @@
                 <toFixMetabolism>
                     <li>
                         <!-- lactation amount change (-1 MET) -->
-                        <add>
+                        <!-- addFirst, not add: XPU's PatchMePlease declares `add` as a single GeneDef,
+                             and MayRequire is only honored on list items. With <add><li MayRequire>,
+                             RimWorld takes the inner text and throws a cross-ref error when Equal
+                             Milking is absent. addFirst is a List<GeneDef>, so the li is dropped
+                             cleanly, and a one-item addFirst behaves exactly like add in XPU. -->
+                        <addFirst>
                             <li MayRequire="akaster.equalmilking">EM_Lactation_Enhanced</li>
-                        </add>
+                        </addFirst>
                     </li>
                     <li>
                         <!-- artistic aptitude change (-2 MET) -->
