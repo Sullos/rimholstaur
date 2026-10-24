@@ -132,9 +132,7 @@
                 <toFixMetabolism>
                     <li>
                         <!-- lactation amount change (-1 MET) -->
-                        <add>
-                            <li MayRequire="akaster.equalmilking">EM_Lactation_Enhanced</li>
-                        </add>
+                        <add MayRequire="akaster.equalmilking">EM_Lactation_Enhanced</add>
                     </li>
                     <li>
                         <!-- artistic aptitude change (-2 MET) -->
