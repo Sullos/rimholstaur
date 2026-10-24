@@ -46,10 +46,10 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<!--thingCategories>
+		<thingCategories>
 			<li>Apparel</li>
 			<li>Underwear</li>
-		</thingCategories-->
+		</thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
@@ -104,10 +104,10 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<!--thingCategories>
+		<thingCategories>
 			<li>Apparel</li>
 			<li>Underwear</li>
-		</thingCategories-->
+		</thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
@@ -161,9 +161,9 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<!--thingCategories>
+		<thingCategories>
 			<li>Apparel</li>
-		</thingCategories-->
+		</thingCategories>
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
