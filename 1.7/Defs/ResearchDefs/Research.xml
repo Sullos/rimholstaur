@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>CowClothes</defName>
+    <label>Holstaur</label>
+  </ResearchTabDef>
+  
+  <ResearchProjectDef>
+    <defName>CowClothingResearch</defName>
+    <label>Cow Clothing</label>
+    <description>Learn how to craft holstaur outfits</description>
+    <tab>CowClothes</tab>
+    <baseCost>200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

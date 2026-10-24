@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <XenotypeDef Abstract="True" Name="S_XenotypeBase">
+        <genes>
+            <li>Ageless</li>
+            <li>DiseaseFree</li>
+            <li>Body_Standard</li>
+            <li>Hair_Grayless</li>
+            <li>Beard_NoBeardOnly</li>
+        </genes>
+        <inheritable>True</inheritable>
+    </XenotypeDef>
+</Defs>

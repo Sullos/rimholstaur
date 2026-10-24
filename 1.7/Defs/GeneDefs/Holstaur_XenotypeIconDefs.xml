@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--============================== Fixed Xenotype Icons ============================-->
+	<!-- Holstaur Xenotype -->
+
+	<XenotypeIconDef>
+		<defName>Holstaur</defName>
+		<texPath>UI/Icons/Xenotypes/Holstaur</texPath>
+	</XenotypeIconDef>
+
+    </Defs>
